@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44362016077",
+    "firebase_url": "https://game-companion-7d7df.firebaseio.com",
+    "project_id": "game-companion-7d7df",
+    "storage_bucket": "game-companion-7d7df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44362016077:android:ff2f9fcb22562172100304",
+        "android_client_info": {
+          "package_name": "com.alexespada.valorantgamecompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44362016077-po9atbqcgrl9sh4cd1k7pedgltr74ekm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOOJ-nNkgd3h5jOWuz83MqufqZ8vt9G2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44362016077-po9atbqcgrl9sh4cd1k7pedgltr74ekm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

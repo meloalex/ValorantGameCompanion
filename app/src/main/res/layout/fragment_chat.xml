@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/headerText"
+        android:text="@string/chat_fragment_header"
+        android:textSize="@dimen/text_big"
+        android:layout_margin="@dimen/margin_big"
+        android:textColor="@color/secondary"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Refresh Indicator -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerText"
+        android:layout_above="@+id/sendMessageContainer">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_above="@id/sendMessageContainer"
+           android:paddingBottom="@dimen/margin_default" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- Send message container -->
+    <RelativeLayout
+        android:id="@+id/sendMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_default"
+        android:layout_margin="@dimen/margin_small"
+        android:padding="@dimen/padding_small"
+        android:orientation="horizontal"
+        android:background="@color/transparentContainer"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_marginHorizontal="@dimen/margin_small"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@id/sendButton"
+            android:hint="@string/chat_edittext"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/send_chat_button"/>
+    </RelativeLayout>
+</RelativeLayout>

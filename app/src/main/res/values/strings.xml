@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Valorant Game Companion</string>
+    <string name="tab_item_news">News</string>
+    <string name="tab_item_chat">Chat</string>
+    <string name="tab_item_profile">Profile</string>
+    <string name="tab_item_streams">Streams</string>
+    <string name="error_email_invalid">Email is not valid</string>
+    <string name="error_username_invalid">Username is not valid</string>
+    <string name="error_password_invalid">Password must be at least %d characters long and contain uppercase letters</string>
+    <string name="error_sign_up">Error signing up. %s</string>
+    <string name="error_logging_in">Error logging in. %s</string>
+    <string name="error_fetching_chat">Error getting chat messages.</string>
+    <string name="error_fetching_news">Error getting news.</string>
+    <string name="register_button">Register</string>
+    <string name="login_button">LogIn</string>
+    <string name="logout_button">LogOut</string>
+    <string name="welcome_text">Welcome back!</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="create_account_header">Create your account here!</string>
+    <string name="login_account_header">Log in to your account</string>
+    <string name="no_account_text">Dont have an account?</string>
+    <string name="create_one_here_text"><u>Create one here!</u></string>
+    <string name="chat_fragment_header">Chat</string>
+    <string name="stream_fragment_header">Now playing</string>
+    <string name="news_fragment_header">News</string>
+    <string name="chat_edittext">Type something...</string>
+    <string name="send_chat_button">Send</string>
+    <string name="user_not_authenticated">You are not authenticated. Please log in to your account.</string>
+    <string name="generic_error">Something went wrong. Please try again later.</string>
+</resources>

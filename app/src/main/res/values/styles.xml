@@ -1,0 +1,35 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Block Top Bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!-- Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/secondary</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/secondary</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnSurface">@color/secondary</item>
+
+        <!-- Components -->
+        <item name="editTextStyle">@style/Custom.EditText.Style</item>
+    </style>
+
+    <!-- Component Styles -->
+    <style name="Custom.EditText.Style" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/secondary</item>
+        <item name="hintTextColor">@color/secondary</item>
+        <item name="android:textColorHint">@color/secondary</item>
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="colorOnSurface">@color/secondary</item>
+    </style>
+
+    <style name="ShapeAppearance.App.CircleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

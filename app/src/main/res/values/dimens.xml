@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="text_big">28dp</dimen>
+    <dimen name="text_small">14dp</dimen>
+    <dimen name="text_title_news">18dp</dimen>
+    <dimen name="text_date">10dp</dimen>
+    <dimen name="layout_height_default">48dp</dimen>
+    <dimen name="chat_card_margin">14dp</dimen>
+    <dimen name="chat_card_height">75dp</dimen>
+    <dimen name="chat_card_avatar_size">30dp</dimen>
+    <dimen name="news_card_title">40dp</dimen>
+    <dimen name="news_card_height">175dp</dimen>
+    <dimen name="news_card_horizontal_margin">22dp</dimen>
+    <dimen name="news_card_vertical_margin">12dp</dimen>
+    <dimen name="news_card_stroke_width">3dp</dimen>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_big"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <!-- Header Text -->
+    <TextView
+        android:text="@string/create_account_header"
+        android:textSize="@dimen/text_big"
+        android:gravity="center"
+        android:textColor="@color/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:hint="@string/username_hint"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_marginTop="@dimen/margin_default"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_margin="@dimen/margin_big"
+        android:text="@string/create_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"/>
+</LinearLayout>

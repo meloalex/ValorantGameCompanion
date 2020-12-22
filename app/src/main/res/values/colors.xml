@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF4654</color>
+    <color name="secondary">#FFFFFF</color>
+    <color name="background">#111923</color>
+    <color name="transparentContainer">#1AFFFFFF</color>
+    <color name="cardContainer">#000000</color>
+    <color name="newsHeader">#1E111923</color>
+</resources>

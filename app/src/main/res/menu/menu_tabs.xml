@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/newsTab" android:title="@string/tab_item_news" android:enabled="true" android:icon="@drawable/ic_baseline_chat_24"/>
+    <item android:id="@+id/chatTab" android:title="@string/tab_item_chat" android:enabled="true" android:icon="@drawable/ic_baseline_chat_24"/>
+    <item android:id="@+id/streamsTab" android:title="@string/tab_item_streams" android:enabled="true" android:icon="@drawable/ic_baseline_streams_24"/>
+    <item android:id="@+id/profileTab" android:title="@string/tab_item_profile" android:enabled="true" android:icon="@drawable/ic_baseline_person_24"/>
+</menu>
