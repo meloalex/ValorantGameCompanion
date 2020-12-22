@@ -13,6 +13,8 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity() {
                     transaction.replace(R.id.fragmentContainer, ChatFragment())
                     transaction.addToBackStack("Chat")
                     transaction.commit()
+                    Firebase.analytics.logEvent("chatTabOpen", null)
                 }
 
                 R.id.newsTab -> {
@@ -37,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                     transaction.replace(R.id.fragmentContainer, NewsFragment())
                     transaction.addToBackStack("News")
                     transaction.commit()
+                    Firebase.analytics.logEvent("newsTabOpen", null)
                 }
 
                 R.id.profileTab -> {
@@ -45,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                     transaction.replace(R.id.fragmentContainer, ProfileFragment())
                     transaction.addToBackStack("Profile")
                     transaction.commit()
+                    Firebase.analytics.logEvent("profileTabOpen", null)
                 }
 
                 R.id.streamsTab -> {
@@ -53,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                     transaction.replace(R.id.fragmentContainer, StreamsFragment())
                     transaction.addToBackStack("Streams")
                     transaction.commit()
+                    Firebase.analytics.logEvent("streamsTabOpen", null)
                 }
             }
             true

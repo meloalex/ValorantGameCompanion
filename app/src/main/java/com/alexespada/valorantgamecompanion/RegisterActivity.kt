@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.alexespada.valorantgamecompanion.models.User
+import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -110,6 +111,7 @@ class RegisterActivity : AppCompatActivity() {
                         .addOnCompleteListener{
                             if (it.isSuccessful)
                             {
+                                Firebase.analytics.logEvent("userRegistered", null)
                                 finish()
                             } else {
                                 Toast.makeText(this, getString(R.string.error_sign_up, it.exception?.message), Toast.LENGTH_LONG).show()

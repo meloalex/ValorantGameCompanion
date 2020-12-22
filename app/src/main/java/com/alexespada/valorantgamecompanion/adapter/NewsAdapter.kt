@@ -41,5 +41,4 @@ class NewsAdapter (var newsList:List<News>): RecyclerView.Adapter<NewsAdapter.Ne
         val backgroundImageView: ImageView = view.findViewById(R.id.newsImageView)
         val context = view.context
     }
-
 }

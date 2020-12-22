@@ -80,6 +80,7 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
             if (it.isSuccessful) {
                 Log.i("LoginActivity", "User Login!")
+                Firebase.analytics.logEvent("usedLoggedIn", null)
                 finish()
             } else {
                 Toast.makeText(this, getString(R.string.error_logging_in, it.exception?.message), Toast.LENGTH_LONG).show()

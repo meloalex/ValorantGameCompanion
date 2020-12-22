@@ -108,8 +108,12 @@ class ChatFragment : Fragment() {
                                 Log.w("Chat", "Error uploading message $message")
                             }
                         }
-                    } ?: run {
 
+                        // Clear Text container
+                        messageEditText.text.clear()
+
+                    } ?: run {
+                        Toast.makeText(this.context, getString(R.string.generic_error), Toast.LENGTH_LONG).show()
                     }
                 } else {
                     Toast.makeText(this.context, getString(R.string.generic_error), Toast.LENGTH_LONG).show()
