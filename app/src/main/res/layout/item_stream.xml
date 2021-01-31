@@ -7,6 +7,7 @@
     android:layout_marginHorizontal="@dimen/news_card_horizontal_margin"
     android:layout_marginVertical="@dimen/news_card_vertical_margin"
     app:strokeWidth="@dimen/news_card_stroke_width"
+    android:id="@+id/cardMaterialCard"
     app:strokeColor="@color/primary">
 
     <RelativeLayout
@@ -14,12 +15,28 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/newsImageView"
+            android:id="@+id/streamImageView"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
+        <TextView
+            android:id="@+id/viewersTextView"
+            tools:text="800 viewers"
+            android:textSize="14dp"
+            android:gravity="center_vertical"
+            android:background="@color/background_transparent"
+            android:drawableEnd="@drawable/ic_baseline_people_24"
+            android:drawableTint="@color/primary"
+            android:drawablePadding="@dimen/margin_extra_small"
+            android:padding="@dimen/margin_small"
+            android:textColor="@color/primary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
         <com.google.android.material.card.MaterialCardView
             android:layout_alignParentBottom="true"
             app:cardBackgroundColor="@color/background_transparent"
@@ -30,10 +47,10 @@
                 android:id="@+id/titleTextView"
                 tools:text="Example Text"
                 android:gravity="center_vertical"
+                android:maxLines="1"
                 android:textSize="@dimen/text_title_news"
-                android:textColor="@color/secondary"
-                android:layout_margin="@dimen/margin_extra_small"
                 android:paddingLeft="@dimen/margin_small"
+                android:textColor="@color/secondary"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 

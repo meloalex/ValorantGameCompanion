@@ -1,0 +1,45 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_layout_width"
+    android:layout_height="@dimen/dialog_layout_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background"
+    android:layout_gravity="center"
+    app:strokeWidth="@dimen/news_card_stroke_width"
+    app:strokeColor="@color/primary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/stream_webview_margin">
+
+        <TextView
+            android:id="@+id/dialogTitleTextView"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dialog_title_textsize"
+            android:text="@string/dialog_title"
+            android:textColor="@color/secondary" />
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_below="@id/dialogTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_text"
+            android:layout_margin="@dimen/margin_extra_small"
+            android:textColor="@color/secondary" />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/okButton"
+            android:text="@string/dialog_text_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

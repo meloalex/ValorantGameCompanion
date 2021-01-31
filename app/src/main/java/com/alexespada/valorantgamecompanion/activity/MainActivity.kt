@@ -1,10 +1,9 @@
-package com.alexespada.valorantgamecompanion
+package com.alexespada.valorantgamecompanion.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
-import android.widget.FrameLayout
+import com.alexespada.valorantgamecompanion.R
 import com.alexespada.valorantgamecompanion.fragment.ChatFragment
 import com.alexespada.valorantgamecompanion.fragment.NewsFragment
 import com.alexespada.valorantgamecompanion.fragment.ProfileFragment

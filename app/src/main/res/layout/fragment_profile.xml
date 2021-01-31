@@ -4,6 +4,22 @@
     android:layout_height="match_parent"
     android:gravity="center">
 
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:gravity="center"
+        android:textSize="@dimen/text_big"
+        android:textColor="@color/secondary"
+        android:text="@string/welcome_text"/>
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/registerButton"
         android:layout_width="match_parent"
@@ -18,15 +34,14 @@
         android:layout_margin="@dimen/margin_default"
         android:text="@string/login_button"/>
 
-    <TextView
-        android:id="@+id/welcomeTextView"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/avatarButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
-        android:gravity="center"
-        android:textSize="@dimen/text_big"
-        android:textColor="@color/secondary"
-        android:text="@string/welcome_text"/>
+        android:text="@string/choose_avatar" />
+
 
     <Button
         android:id="@+id/logoutButton"

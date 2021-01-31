@@ -1,14 +1,15 @@
-package com.alexespada.valorantgamecompanion
+package com.alexespada.valorantgamecompanion.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import com.alexespada.valorantgamecompanion.Constants
+import com.alexespada.valorantgamecompanion.R
 import com.alexespada.valorantgamecompanion.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -16,8 +17,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_register.*
-import java.util.regex.Matcher
-import java.util.regex.Pattern
 
 class RegisterActivity : AppCompatActivity() {
 

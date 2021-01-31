@@ -30,4 +30,15 @@
     <string name="send_chat_button">Send</string>
     <string name="user_not_authenticated">You are not authenticated. Please log in to your account.</string>
     <string name="generic_error">Something went wrong. Please try again later.</string>
+    <string name="choose_avatar">Choose your avatar.</string>
+    <string name="generic_network_error">Something went wrong. Please check your internet connection.</string>
+    <string name="error_twitch_auth">Something went wrong when authenticating with twitch. Please try again later.</string>
+    <string name="error_uploading_picture">Error uploading picture. Please try again later.</string>
+    <string name="stream_open_button">Open</string>
+    <string name="stream_start_textview">Stream started:</string>
+    <string name="stream_viewers_textview">Current viewers:</string>
+    <string name="stream_clips_textview">Clips</string>
+    <string name="dialog_title">Be careful:</string>
+    <string name="dialog_text">"You're about to leave the app."</string>
+    <string name="dialog_text_button">Leave</string>
 </resources>

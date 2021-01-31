@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/stream_layout_margin"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StreamDetail">
+
+    <TextView
+        android:id="@+id/streamTitleTextView"
+        tools:text="Stream Title"
+        android:textSize="18dp"
+        android:maxLines="2"
+        android:textColor="@color/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <WebView
+        android:layout_marginVertical="@dimen/stream_webview_margin"
+        android:id="@+id/streamWebView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stream_webview_height"/>
+
+    <Button
+        android:id="@+id/openStreamButton"
+        android:layout_marginVertical="@dimen/stream_button_margin"
+        android:text="@string/stream_open_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="@dimen/stream_layout_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/streamerNameTextView"
+            android:drawableStart="@drawable/ic_baseline_person_24_white"
+            android:drawableTint="@color/primary"
+            android:drawablePadding="@dimen/stream_drawable_padding"
+            tools:text="Creator Name"
+            android:textSize="16dp"
+            android:textColor="@color/secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/stream_layout_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_group_24"
+            android:drawablePadding="@dimen/stream_drawable_padding"
+            android:drawableTint="@color/primary"
+            android:text="@string/stream_viewers_textview"
+            android:textColor="@color/secondary"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/viewersCountTextView"
+            android:paddingStart="@dimen/stream_layout_padding"
+            tools:text="8000"
+            android:textSize="16dp"
+            android:textColor="@color/secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/stream_layout_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:drawablePadding="@dimen/stream_drawable_padding"
+            android:drawableTint="@color/primary"
+            android:text="@string/stream_start_textview"
+            android:textColor="@color/secondary"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/timestampTextView"
+            android:paddingStart="@dimen/stream_layout_padding"
+            tools:text="01:02:00"
+            android:textColor="@color/secondary"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/stream_clips_textview"
+        android:drawableLeft="@drawable/ic_baseline_ondemand_video_24"
+        android:drawablePadding="@dimen/stream_drawable_padding"
+        android:drawableTint="@color/primary"
+        android:textSize="20dp"
+        android:layout_margin="@dimen/margin_extra_small"
+        android:textColor="@color/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clipsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

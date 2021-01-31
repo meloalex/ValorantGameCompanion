@@ -18,4 +18,13 @@
     <dimen name="news_card_horizontal_margin">22dp</dimen>
     <dimen name="news_card_vertical_margin">12dp</dimen>
     <dimen name="news_card_stroke_width">3dp</dimen>
+    <dimen name="stream_layout_margin">32dp</dimen>
+    <dimen name="stream_webview_margin">14dp</dimen>
+    <dimen name="stream_webview_height">200dp</dimen>
+    <dimen name="stream_button_margin">6dp</dimen>
+    <dimen name="stream_layout_padding">8dp</dimen>
+    <dimen name="stream_drawable_padding">12dp</dimen>
+    <dimen name="dialog_layout_width">280dp</dimen>
+    <dimen name="dialog_layout_height">180dp</dimen>
+    <dimen name="dialog_title_textsize">22dp</dimen>
 </resources>
